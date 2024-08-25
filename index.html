@@ -40,12 +40,12 @@
 <body class="manrope-font max-w-screen-xl mx-auto">
   <header class="bg-gradient-to-b from-[#E9E9E9] to-white">
     <div class="navbar">
-        <div class="navbar-start">
-          <a class="text-xl font-extrabold text-[#212121]">
-            <i class="fa-solid fa-arrow-right -rotate-45 bg-arrow-bg rounded-full p-3"></i>
-            Rinterio
-          </a>
-        </div>
+      <div class="navbar-start ml-32">
+        <a class="text-xl font-extrabold text-[#212121]">
+          <i class="fa-solid fa-arrow-right -rotate-45 bg-arrow-bg rounded-full p-3"></i>
+          Rinterio
+        </a>
+      </div>
       <div class="navbar-center hidden lg:flex">
         <ul class="menu menu-horizontal px-1">
           <li><a class="font-extrabold text-[#494949]">Home</a></li>
@@ -55,16 +55,16 @@
           <li><a>Contact Us</a></li>
         </ul>
       </div>
-      <div class="navbar-end lg:flex">
-        <button class="btn btn-ghost btn-circle hidden lg:block">
+      <div class="navbar-end lg:flex gap-2 mr-32">
+        <button class="btn btn-ghost btn-circle hidden lg:flex bg-slate-50">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
           </svg>
         </button>
         <!-- dropdown -->
-        <div class="dropdown dropdown-end lg:flex">
-          <div tabindex="0" role="button" class="btn btn-ghost btn-circle hidden lg:flex">
+        <div class="dropdown dropdown-end lg:flex gap-2 ">
+          <div tabindex="0" role="button" class="btn btn-ghost btn-circle hidden lg:flex bg-slate-50">
             <div class="indicator">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
@@ -99,7 +99,7 @@
       </div>
     </div>
     <!-- header image -->
-    <div class="max-w-screen-xl mx-auto mt-14">
+    <div class="max-w-screen-xl mx-auto mt-14 ml-32 mr-32">
       <img src="assets/banner.png" class="mx-auto w-[570px] h-[350px]">
       <h1 class="lg:text-6xl text-3xl text-[#212121] font-extrabold text-center">A barn house of this design has a <br>
         striking appearance</h1>
@@ -116,37 +116,99 @@
     </div>
   </header>
   <main>
-    
     <!-- main image and content section -->
-    <div class="lg:flex bg-[#E9E9E9]">
+    <div class="lg:flex bg-[#E9E9E9] pt-24 pr-32 pl-32">
       <!-- Left content area -->
-      <div>
-        <img src="assets/Vector.png" alt="">
-        <button>About us</button>
+      <div class="space-y-6 relative">
+        <img src="assets/Vector.png" class="absolute -left-16 -top-10">
+        <button class="bg-white rounded-3xl p-2">
+          <i class="fa-solid fa-arrow-right"></i>
+          About us</button>
         <h2>We design thoughtful, liveable spaces</h2>
         <p>The barn house captivates with its blend of rustic charm and
           modern sophistication, featuring weathered wood, sleek metal accents.</p>
         <!-- text container -->
-        <div class="lg:flex bg-[#FFFFFF] w-[550px] h-[130px] rounded-xl">
+        <div class="lg:flex bg-[#FFFFFF] rounded-xl p-3 items-center mr-3">
           <!-- image container -->
-          <div>
+          <div class="mr-2">
+            <img src="assets/commercial.png" alt="">
+          </div>
+          <div class="lg:w-4/5">
+            <h3 class="text-xl font-medium">Comercial </h3>
+            <p></p>The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
+        </div>
+        <div class="lg:flex bg-[#FFFFFF] rounded-xl p-3 items-center  mr-3">
+          <!-- image container -->
+          <div class="mr-2">
             <img src="assets/residential.png" alt="">
           </div>
-          <div>
-            <h3>Comercial </h3>
-            <p>The barn house captivates with its blend of rustic charm and modern.</p>
+          <div class="lg:w-4/5">
+            <h3 class="text-xl font-medium">Residential </h3>
+            <p class=>The barn house captivates with its blend of rustic charm and modern.</p>
           </div>
-
         </div>
       </div>
       <!-- right image aea -->
       <div>
         <img src="assets/Rectangle.png" alt="">
       </div>
-
     </div>
-
-
+    <!-- work process area -->
+    <div class="bg-[#E9E9E9] pt-24 pb-6">
+      <!-- work content text center -->
+      <div class="text-center">
+        <button class="bg-white rounded-3xl p-2">
+          <i class="fa-solid fa-arrow-right"></i>
+          How we works</button>
+        <h2 class="text-4xl text-[#212121] font-extrabold">Our Works Process</h2>
+        <p class="text-[#494949] font-medium">The barn house captivates with its blend of rustic charm and modern
+          sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+      </div>
+      <!-- 4 card section -->
+      <div class="grid grid-cols-4">
+        <!-- card 1 -->
+        <div class="card bg-[#E7C1D3] shadow-xl">
+          <figure>
+            <img src="assets/concept.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title text-xl font-extrabold">Concept</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+          </div>
+        </div>
+        <!-- card 1 -->
+        <div class="card bg-[#E7C1D3] shadow-xl">
+          <figure>
+            <img src="assets/concept.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title text-xl font-extrabold">Concept</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+          </div>
+        </div>
+        <!-- card 1 -->
+        <div class="card bg-[#E7C1D3] shadow-xl">
+          <figure>
+            <img src="assets/concept.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title text-xl font-extrabold">Concept</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+          </div>
+        </div>
+        <!-- card 1 -->
+        <div class="card bg-[#E7C1D3] shadow-xl">
+          <figure>
+            <img src="assets/concept.png" alt="Shoes" />
+          </figure>
+          <div class="card-body">
+            <h2 class="card-title text-xl font-extrabold">Concept</h2>
+            <p>If a dog chews shoes whose shoes does he choose?</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <footer></footer>
 
