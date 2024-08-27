@@ -39,13 +39,13 @@
 <body class="manrope-font mx-auto">
   <header class="bg-gradient-to-b from-[#E9E9E9] to-white">
     <div class="navbar">
-      <div class="navbar-start lg:ml-32 ml-10">
+      <div class="navbar-start lg:ml-32 ml-5 lg:mt-12 mt-8">
         <a class="text-xl font-extrabold text-[#212121]">
           <i class="fa-solid fa-arrow-right -rotate-45 bg-arrow-bg rounded-full p-3"></i>
           Rinterio
         </a>
       </div>
-      <div class="navbar-center hidden lg:flex">
+      <div class="navbar-center hidden lg:flex lg:mt-12 mt-8">
         <ul class="menu menu-horizontal px-1">
           <li><a class="font-extrabold text-[#494949]">Home</a></li>
           <li><a>Service</a></li>
@@ -54,7 +54,7 @@
           <li><a>Contact Us</a></li>
         </ul>
       </div>
-      <div class="navbar-end lg:flex gap-2 mr-32">
+      <div class="navbar-end lg:flex gap-2 lg:mr-32 mr-5 lg:mt-12 mt-8">
         <button class="btn btn-ghost btn-circle hidden lg:flex bg-slate-50">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -65,14 +65,12 @@
         <div class="dropdown dropdown-end lg:flex gap-2 ">
           <div tabindex="0" role="button" class="btn btn-ghost btn-circle hidden lg:flex bg-slate-50">
             <div class="indicator">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 bg-white" fill="none" viewBox="0 0 24 24"
                 stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                   d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" />
               </svg>
-
             </div>
-
           </div>
           <a class="btn bg-arrow-bg rounded-3xl hidden lg:flex">
             Book Consult
@@ -98,16 +96,18 @@
       </div>
     </div>
     <!-- header image -->
-    <div class="max-w-screen-xl mx-auto mt-14 ml-32 mr-32">
+    <div class="max-w-screen-xl mt-14 lg:mx-32 mx-8">
       <img src="assets/banner.png" class="mx-auto w-[570px] h-[350px]">
-      <h1 class="lg:text-6xl text-3xl text-[#212121] font-extrabold text-center">A barn house of this design has a <br>
+      <h1 class="lg:text-6xl text-3xl text-[#212121] font-black text-center">A barn house of this design has a <br>
         striking appearance</h1>
-      <p class="mt-[24px] font-medium text-[#494949] text-center">The barn house captivates with its blend of rustic
+      <p class="mt-[24px] font-medium text-[#494949] text-center mx-4">The barn house captivates with its blend of
+        rustic
         charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the
         space with natural light.</p>
 
-      <div class=" lg:flex items-center mt-8 mb-24">
-        <a class="btn rounded-3xl w-40 mx-auto bg-[#ABEF5F80]">
+      <!-- view details button -->
+      <div class=" lg:flex items-center mt-8 lg:mb-24 mb-10">
+        <a class="btn rounded-3xl lg:w-40 w-full mx-auto bg-[#ABEF5F80]">
           View details
           <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-3 text-black"></i>
         </a>
@@ -116,18 +116,20 @@
   </header>
   <main>
     <!-- main image and content section -->
-    <div class="lg:flex bg-[#E9E9E9] pt-24 pr-32 pl-32">
+    <div class="lg:flex bg-[#E9E9E9] lg:pt-24 lg:px-32 px-5 justify-items-center">
       <!-- Left content area -->
-      <div class="space-y-6 relative">
-        <img src="assets/Vector.png" class="absolute -left-16 -top-10">
-        <button class="bg-white rounded-3xl p-2">
-          <i class="fa-solid fa-arrow-right"></i>
-          About us</button>
-        <h2>We design thoughtful, liveable spaces</h2>
-        <p>The barn house captivates with its blend of rustic charm and
-          modern sophistication, featuring weathered wood, sleek metal accents.</p>
-        <!-- text container -->
-        <div class="lg:flex bg-[#FFFFFF] rounded-xl p-3 items-center mr-3">
+      <div class="lg:space-y-3 relative">
+        <img src="assets/Vector.png" class="lg:absolute hidden lg:block -left-16 -top-10">
+        <div class="lg:text-left text-center">
+          <button class="bg-white rounded-3xl p-2 lg:mt-2 mt-2">
+            <i class="fa-solid fa-arrow-right"></i>
+            About us</button>
+        </div>
+        <h2 class="font-extrabold text-[#212121] lg:text-4xl text-2xl text-center">We design thoughtful,<br> liveable
+          spaces</h2>
+        <p class="pb-6 lg:text-left text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood,
+          sleek metal accents.</p>
+        <div class="lg:flex bg-[#FFFFFF] rounded-xl p-4 items-center mr-3 mb-3">
           <!-- image container -->
           <div class="mr-2">
             <img src="assets/commercial.png" alt="">
@@ -138,8 +140,8 @@
           </div>
         </div>
         <div class="lg:flex bg-[#FFFFFF] rounded-xl p-3 items-center  mr-3">
-          <!-- image container -->
-          <div class="mr-2">
+          <!-- big image container -->
+          <div class="mr-2 mt-4">
             <img src="assets/residential.png" alt="">
           </div>
           <div class="lg:w-4/5">
@@ -149,7 +151,7 @@
         </div>
       </div>
       <!-- right image aea -->
-      <div>
+      <div class="mt-5 lg:mt-12">
         <img src="assets/Rectangle.png" alt="">
       </div>
     </div>
@@ -165,11 +167,11 @@
           sophistication,<br> featuring weathered wood, sleek metal accents.</p>
       </div>
       <!-- 4 card section -->
-      <div class="grid lg:grid-cols-4 gap-6 pb-24 mx-32">
+      <div class="grid lg:grid-cols-4 gap-6 lg:pb-24 pb-3 lg:mx-32 mx-3">
         <!-- card 1 -->
-        <div class="card bg-[#E7C1D3]">
+        <div class="card bg-[#E7C1D3] w-full">
           <div class="pl-6 pt-7">
-            <img src="assets/concept.png" alt="Shoes" />
+            <img src="assets/concept.png" class="" />
           </div>
           <div class="card-body">
             <h2 class="card-title text-xl font-extrabold">Concept</h2>
@@ -209,28 +211,27 @@
       </div>
     </div>
     <!-- Our latest Portfolio -->
-    <div class="mt-24">
+    <div class="pt-12 bg-[#E9E9E9] lg:bg-white">
       <!-- center tex area -->
       <div class="text-center space-y-6">
         <button class="bg-[#acef5f8b] rounded-3xl p-3">
           <i class="fa-solid fa-arrow-right"></i>
           Explore our Latest works</button>
         <h2 class="text-4xl font-extrabold text-[#212121]">Our Latest Portfolio</h2>
-        <p class="pb-24 font-medium text-[#494949]">The barn house captivates with its blend of rustic charm <br> and
+        <p class="lg:pb-24 pb-4 font-medium text-[#494949] mx-2">The barn house captivates with its blend of rustic charm and
           modern sophistication, featuring weathered wood, sleek metal accents.</p>
       </div>
     </div>
     <!-- top 2 card -->
     <div class="lg:flex lg:mx-32 mx-10">
       <!-- bigger section -->
-      <div class="flex gap-2 border rounded-3xl px-4 py-4 w-4/5">
-        <div>
-          <img src="assets/img1.png" alt="" class="h-[170px] w-[350px]">
+      <div class="lg:flex lg:border rounded-3xl px-4 lg:py-5 py-4 lg:w-4/5">
+        <div class="mt-8 lg:mt-0">
+          <img src="assets/img1.png" alt="" class="lg:h-[140px] lg:w-[360px] w-[380px] lg:ml-3 ml-2 lg:mt-3">
         </div>
-        <div class="space-y-5">
-          <h1 class="text-2xl font-extrabold text-[#494949]">Commercial</h1>
-          <p class="pb-3 text-[#737373]">The barn house captivates with its blend of rustic charm and modern. The barn
-            house captivates with its blend of rustic charm and modern .</p>
+        <div class="lg:ml-16">
+          <h1 class="text-2xl font-extrabold pt-3 text-[#494949]">Commercial</h1>
+          <p class="pb-3 text-[#737373]">The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern.</p>
           <a class="rounded-3xl w-40 mx-auto] text-xl font-extrabold text-[#737373]">
             View details
             <i class="fa-solid fa-arrow-right -rotate-45 bg-[#ABEF5F] rounded-full p-3 text-black"></i>
@@ -238,19 +239,19 @@
         </div>
       </div>
       <!-- right image section -->
-      <div class="gap-2 border rounded-3xl px-4 py-4 ml-6">
+      <div class="gap-2 border rounded-3xl px-3 py-3 lg:ml-3">
         <img src="assets/img2.png" alt="">
       </div>
     </div>
     <!-- other 3 card -->
-    <div class="lg:flex mt-4 lg:mx-32 mx-10">
+    <div class="lg:flex mt-4 lg:mx-32 pb-3 mx-10">
       <!-- left section -->
       <div class="gap-2 border rounded-3xl px-4 py-4">
         <img src="assets/img3.png" class="w-[500px] h-[170px]">
       </div>
       <!-- center section -->
-      <div class="flex gap-2 border rounded-3xl px-4 py-4 ml-6">
-        <div>
+      <div class="flex flex-col lg:flex-row gap-4 border rounded-3xl lg:px-4 lg:ml-3 lg:mt-0 mt-3 px-3 py-3">
+        <div class="">
           <img src="assets/img4.png" alt="" class="w-[500px] h-[170px]">
         </div>
         <div class="space-y-5">
@@ -264,7 +265,7 @@
         </div>
       </div>
       <!-- right section -->
-      <div class="gap-2 border rounded-3xl px-4 py-4 ml-6">
+      <div class="gap-2 border rounded-3xl px-3 py-3 lg:ml-3 mt-4 lg:mt-0">
         <img src="assets/img5.png" class="w-[500px] h-[170px]">
       </div>
     </div>
@@ -302,53 +303,53 @@
       </section>
     </div>
     <!-- extra section -->
-     <div class="bg-slate-500 py-3">
+    <div class="bg-slate-500 py-3">
       <h1 class="text-white font-extrabold text-5xl text-center">Frequently Asked Question FAQ.</h1>
-     </div>
-     <div class="md:flex bg-slate-500 p-2 gap-3">
+    </div>
+    <div class="md:flex bg-slate-500 p-2 gap-3">
       <!-- frequently ask question image section -->
-       <div>
+      <div>
         <img src="assets/faq.webp" class="w-full h-full rounded-3xl">
-       </div>
-       <!-- FAQ text section -->
-        <div class="w-full">
-          <div class="collapse collapse-plus bg-base-200 mb-2">
-            <input type="radio" name="my-accordion-3" checked="checked" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-            <div class="collapse-content">
-              <p>hello</p>
-            </div>
-          </div>
-          <div class="collapse collapse-plus bg-base-200 mb-2">
-            <input type="radio" name="my-accordion-3" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-            <div class="collapse-content">
-              <p>hello</p>
-            </div>
-          </div>
-          <div class="collapse collapse-plus bg-base-200 mb-2">
-            <input type="radio" name="my-accordion-3" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-            <div class="collapse-content">
-              <p>hello</p>
-            </div>
-          </div>
-          <div class="collapse collapse-plus bg-base-200 mb-2">
-            <input type="radio" name="my-accordion-3" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-            <div class="collapse-content">
-              <p>hello</p>
-            </div>
-          </div>
-          <div class="collapse collapse-plus bg-base-200 mb-2">
-            <input type="radio" name="my-accordion-3" />
-            <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-            <div class="collapse-content">
-              <p>hello</p>
-            </div>
+      </div>
+      <!-- FAQ text section -->
+      <div class="w-full">
+        <div class="collapse collapse-plus bg-base-200 mb-2">
+          <input type="radio" name="my-accordion-3" checked="checked" />
+          <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+          <div class="collapse-content">
+            <p>hello</p>
           </div>
         </div>
-     </div>
+        <div class="collapse collapse-plus bg-base-200 mb-2">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200 mb-2">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200 mb-2">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+        <div class="collapse collapse-plus bg-base-200 mb-2">
+          <input type="radio" name="my-accordion-3" />
+          <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
+          <div class="collapse-content">
+            <p>hello</p>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   <footer class="bg-[#1C1C1C] text-white">
     <!-- footer center text -->
@@ -361,19 +362,19 @@
         featuring weathered wood, sleek metal accents.</p>
     </div>
     <!-- menu items -->
-     <div class="lg:flex justify-center gap-28 my-12">
+    <div class="lg:flex justify-center gap-28 my-12">
       <p>Home</p>
       <p>Services</p>
       <p>Portfolio</p>
       <p>Blogs</p>
-      <p>Contact Us</p> 
-     </div>
-     <div class="lg:flex justify-center">
+      <p>Contact Us</p>
+    </div>
+    <div class="lg:flex justify-center">
       <button class="lg:col-span-2 bg-[#ABEF5F] font-semibold text-black text-center px-3 py-2 rounded-full mb-10">
         Book a consult
         <i class="bg- fa-solid fa-arrow-right -rotate-45 bg-arrow-bg rounded-full p-3 bg-black text-white"></i>
       </button>
-     </div>
+    </div>
   </footer>
 </body>
 
